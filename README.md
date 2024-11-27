@@ -82,10 +82,53 @@ Reset the account password. <br/>
 <br />
 <br />
 Try to log back in with the new password. Success! <br/>
-<h2>Enabling/Disabling Accounts</h2>
 
+<h2>Enabling/Disabling Accounts</h2>
+As a foreword, when working Help Desk or support, it is important to check in with Supervisors or Managers when contacted about account disablement. There are many reasons why an account would be disabled, including but not limited to: termination, fraud, or technical issues. 
 <br />
 <br />
+Disable the same account in Active Directory <br/>
+
+<img src="https://i.imgur.com/9MmxFOZ.png" height="80%" width="80%" alt="Disable bigfat"/>
+<br />
+<br />
+
+Try to login to the client account. Note the message that appears. <br/>
+
+<img src="https://i.imgur.com/3ZwRvja.png" height="60%" width="60%" alt="observe account disabled."/>
+<br />
+<br />
+
+Enable the account. Note the icon for the client user had changed when we disabled the account. <br/>
+
+<img src="https://i.imgur.com/22QYIZb.png" height="80%" width="80%" alt="Enable the account"/>
+<br />
+<br />
+
+<h2>Observing Logs</h2>
+Observe the logs in the Domain Controller. Open eventvwr.msc in the start menu. Run as administrator.<br/>
+
+<img src="https://i.imgur.com/AG8aHfM.png" height="70%" width="70%" alt="eventvwr.msc"/>
+<br />
+<br />
+
+Locate the client account and continue. <br/>
+
+<img src="https://i.imgur.com/JWmpQD0.png" height="80%" width="80%" alt="use eventvwr.msc to locate the client account"/>
+<br />
+<br />
+
+View event logs. In the image, we can see our failed login attempt generated an event log. <br/>
+
+<img src="https://i.imgur.com/eBgEnKC.png" height="80%" width="80%" alt="view event logs"/>
+<br />
+<br />
+
+Now, view those same logs from the Domain controller.
+<img src="https://i.imgur.com/shYz6sd.png" height="80%" width="80%" alt="reset password"/>
+<br />
+<br />
+
 Finish the lab, but do not delete the VMs in Azure. We will use them for upcoming labs.
 If you are done for the day and want to save money, simply “Stop”/turn off the VMs within the Azure Portal
 <br/>
